@@ -291,7 +291,7 @@ h2{
    }
 }
 
-@media (max-width:500px) {
+@media (max-width:600px) {
     
     html{
         scroll-behavior: smooth;
@@ -364,7 +364,7 @@ h2{
     }
 }
 
-@media (min-width: 510px) and (max-width: 1250px) {
+@media (min-width: 600px) and (max-width: 1250px) {
 
     html{
         scroll-behavior: smooth;
@@ -410,15 +410,18 @@ h2{
     }
 
     .Card{
+        display: flex;
+        flex-direction: column;
         width: 85%;
-        height: 60vh;
+        height: 800px;
         margin-bottom: 15%;
     }
 
    .Background_Mugiwara{
-       height: 500px;
+       height: 400px;
+       width: 100%;
        background-size: cover;
-       background-position: center;
+       background-repeat: no-repeat;
    }
 
     .Profile img{
