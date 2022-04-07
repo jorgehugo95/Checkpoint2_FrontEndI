@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    background-color: #015974;
+}
+
+header img{
+    height: 20vh;
+    width: 20vw;
+    margin-left: 2%;
+    margin-right: 5%;
+    }
+
+header img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+ul{
+    width: 70vw;       
+    gap: 10%;
+    margin-bottom: 2%;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    color: black;    
+    padding: 2%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: #ffe758;   
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+li:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Banner {
+    width: 100vw;
+    height: 80vh;
+    background-image: url("../img/banner_luffy.jpeg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+main{
+    width: 100vw;
+    background-color: #f6ed9f;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.Description h1{
+    font-size: 3rem;
+}
+
+.Description h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.Description p{
+    text-align: center;
+    padding: 2%;
+}
+
+#Estrela:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.Infos {
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.Infos h2 {
+    color: #000000;
+}
+
+.Infos a {
+    color: hsl(63, 12%, 35%);
+}
+
+.Ajustes{
+    text-align: center;
+}
+
+.trailer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.trailer h1{
+    padding: 2%;
+    font-size: 3rem;
+}
+
+.trailer h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+iframe{
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 20px;
+}
+
+iframe:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+footer{
+    width: 100vw;
+    background-color: #ffe758;
+    padding: 2%;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Rodapé{
+display: flex;
+justify-content: center;
+}
+
+.Aluno{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.Sites{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+.Aluno h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Logo{
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+/*Moblile lest*/
+
+
+@media (max-width:600px) {
+
+    header {
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img {
+        width: 80vw;
+    }
+
+    ul {
+        gap: 10%;
+    }
+
+    li {
+        padding: 5%;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .Infos {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 7%;
+        
+    }
+
+    p {
+        margin: 5px;
+    }
+
+    .Description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    iframe {
+        width: 80%;
+    }
+
+    footer{
+        height: 100vh;
+    }
+
+    .Rodapé{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .Aluno{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
