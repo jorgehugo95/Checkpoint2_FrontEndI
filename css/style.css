@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -11,98 +11,257 @@
 
 }
 
+html{
+scroll-behavior: smooth;
+}
 
-    
-header{
+header {
     width: 100vw;
     height: 20vh;
     display: flex;
     background-color: #015974;
     align-items: center
 }
-.MenuPrincipal{
-    width: 100vw;
-    
-}
-
-.MenuPrincipal img{
+header img{
     height: 20vh;
     width: 20vw;
-    position: relative;
-    top: 80px;
-    margin-left: 4%;
-    
-
+    margin-left: 2%;
+    margin-right: 5%;
 }
 
-.MenuPrincipal nav{
+header img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+nav{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-self: center;
 }
 
-.Navegador{
+ul{
     width: 70vw;       
     gap: 30%;
     margin-bottom: 2%;
     display: flex;
-    border: 10px;
-    justify-content: space-around;
-    margin-bottom: 10%;
-    
-    
 }
 
-.Navegador li{
-    height: ;
-    color: white;
-    
-    
+li{
+    list-style-type: none;
+    color: black;    
+    padding: 2%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: #ffe758;   
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
 }
-.Navegador li:hover{
-    background-color: #10292c;
-    width: 100px;
-    height: 100px;
-}   
 
-
-.banner__main{
-    background-image: url(/img/banner.png);
-    width: 100%;
-    height: 770px;
-    padding: 40px;
-    
+li:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 
 
-.login{
-    width: 40%;
-    height: 360px;
+.banner__main {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/img/banner_login.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+
+}
+
+
+
+.login {
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     margin: auto;
-    padding: 70px;
-    background-color: azure;
-    border-radius: 10px;
+    padding: 20%;
+    background-image: url(/img/mugiwaras.jpg);
+    background-size:contain;
+    background-repeat: round;
     
+    border-radius: 10px;
+    box-shadow: 0px 2px 25px 8px rgba(0, 0, 0, 0.82);
+
+
+}
+.login:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
 }
 
-.logo__login{
-    width: 40%;
+.logo__login {
+    height: 20vh;
+    width: 20vw;
     margin: auto;
-    
+
 }
-.tittle__login{
+.logo__login:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+.tittle__login {
     align-items: center;
     margin: auto;
+    font-size: 3rem;
+    color: white;
+}
+.tittle__login:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.email {
+    padding: 3%;
+    margin: 3%;
+}
+.email:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+.senha {
+    padding: 3%;
+    margin: 3%;
+}
+.senha:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+#e-mail {
+    border-radius: 15px 15px 15px 15px;
+    width: 40vw;
+    height: 5vh;
+}
+#senha {
+    border-radius: 15px 15px 15px 15px;
+    width: 40vw;
+    height: 5vh;
+
 }
 
-.botão{
-    width: 80px;
-    height: 40px;
-    margin: auto;
-
+.botão {
+    width: 150px;
+    height: 50px;
+    margin: 10%;
+    color: black;
+    padding: 2%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: #ffe758;
+    box-shadow: 0px 2px 25px 8px rgba(0, 0, 0, 0.82);
+    text-decoration: none;
+    
 }
+.botão:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+@keyframes Efeito {
+    0%{
+     transform: rotate(0);
+     transition: 0s;
+    }
+    
+    50%{
+        transform: rotate(360deg);
+        transition: 0.5s;
+    }
+    75%{
+     transform: scale(1.1);
+     transition: 0.5s;
+    }
+    100%{
+        transform: scale(1);
+        transition: 0.5s;
+    }
+ }
+ @media (max-width:500px) {
+    
+    html{
+        scroll-behavior: smooth;
+        width: 100vw;
+    }
+    
+    header{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img{
+        width: 80%;
+    }
+    
+    ul{
+        gap: 10%;
+    }
+    
+    li{
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .banner__main{
+        height: 70vh;
+        background-size: contain;
+        background-repeat: repeat;
+    
+    }
+  
+    
+    @media (min-width: 510px) and (max-width: 1250px) {
+
+    html{
+        scroll-behavior: smooth;
+        width: 100vw;
+    }
+
+    header{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img{
+        width: 50%;
+        margin-top: -5%;
+    }
+
+    li{
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+    .banner__main{
+        height: 75vh;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    }
