@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 3%;
+}
+
+h1:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    background-color: #015974;
+}
+
+
+header img{
+    height: 20vh;
+    width: 20vw;
+    margin-left: 2%;
+    margin-right: 5%;
+    }
+
+header img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+ul{
+    width: 70vw;       
+    gap: 30%;
+    margin-bottom: 2%;
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+    color: black;    
+    padding: 2%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: #ffe758;   
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+li:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Banner{
+    width: 100vw;
+    height: 80vh;
+    background-image:url(../img/banner_of.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.BannerCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+    width: 30%;
+    height: 250px;
+}
+
+.BannerCard:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+.Banner h1{
+    font-size: 3rem;
+}
+
+.Banner p{
+    margin: 5%;
+    text-align: center;
+}
+
+button{
+    padding: 5%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: transparent;   
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+button:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main{
+    width: 100vw;
+    background-color: #f6ed9f;
+}
+
+.ContainerCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;   
+    padding: 5%; 
+}
+
+.Card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#ffe758;
+    text-align: center;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+    border-radius: 15px 15px 15px 15px;
+    width: 30%;
+    height: 520px;
+    margin-bottom: 5%;
+}
+
+.Card:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+.Card button{
+    position: static;
+    margin: 5%;
+}
+
+.Card p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.Icon img{
+   width: 15%;
+   height: 15%;
+   margin-top: 5%;
+   margin-right: 75%;
+}
+
+.Icon img:hover{
+    position: inherit;
+    transform: scale(1);
+    transition: 2s;
+    animation: Efeito 2s linear;
+}
+
+.Profile img{
+    height: 25vh;
+    border-radius: 50%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background-repeat: no-repeat;
+    margin-top: -125px;
+}
+
+.Profile img:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+}
+
+.Background_Mugiwara{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 50%;
+    width: 100%;
+}
+
+
+.Card h2{
+    font-size: 1.5rem;
+    padding: 2%;
+    text-align: center;
+}
+
+footer{
+    width: 100vw;
+    background-color: #ffe758;
+    padding: 2%;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Rodapé{
+display: flex;
+justify-content: center;
+}
+
+.Aluno{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.Sites{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+.Aluno h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Logo{
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@keyframes Efeito {
+   0%{
+    transform: rotate(0);
+    transition: 0s;
+   }
+   
+   50%{
+       transform: rotate(360deg);
+       transition: 0.5s;
+   }
+   75%{
+    transform: scale(1.1);
+    transition: 0.5s;
+   }
+   100%{
+       transform: scale(1);
+       transition: 0.5s;
+   }
+}
+
+@media (max-width:600px) {
+    
+    html{
+        scroll-behavior: smooth;
+        width: 100vw;
+    }
+    
+    header{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img{
+        width: 80%;
+    }
+    
+    ul{
+        gap: 10%;
+    }
+    
+    li{
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Banner{
+        height: 70vh;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .BannerCard{
+        width: 80%;
+        color:black;
+    }
+
+    .ContainerCards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .Card{
+        width: 85%;
+        margin-bottom: 10%;
+    }
+
+    .Profile img{
+        height: 20vh;
+    }
+
+    footer{
+        height: 100vh;
+    }
+
+    .Rodapé{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2%;
+    }
+
+    .Aluno{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1250px) {
+
+    html{
+        scroll-behavior: smooth;
+        width: 100vw;
+    }
+
+    header{
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header img{
+        width: 50%;
+        margin-top: -5%;
+    }
+
+    li{
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;       
+    }
+
+    .Banner{
+        height: 75vh;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    .BannerCard{
+        width: 50%;
+        height: 30%;
+        color:black;
+    }
+
+    .ContainerCards{
+        display: flex;
+        flex-direction: column;
+        padding-top: 10%;
+    }
+
+    .Card{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        height: 800px;
+        margin-bottom: 15%;
+    }
+
+   .Background_Mugiwara{
+       height: 400px;
+       width: 100%;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+
+    .Profile img{
+        height: 20vh;
+    }
+
+    .Card h2{
+        font-size: 3rem;
+    }
+
+    .Card p{
+        font-size: 2rem;
+    }
+
+    .Card button a{
+        font-size: 2rem;
+    }
+
+    footer{
+        height: 40vh;
+    }
+
+    .Rodapé{
+       height: 80%;
+    }
+
+    .Sites{
+        gap: 50px;
+    }
+  
+}
