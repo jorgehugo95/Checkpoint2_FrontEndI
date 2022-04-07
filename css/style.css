@@ -4,39 +4,222 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
 
+
 header{
-    width: 100%;
-    height: 20vh;
     display: flex;
     background-color: #015974;
-    justify-content:space-around;
-    background-color: #015974;
+    height: 20vh;
+    width: 100vw;
+    justify-content: space-between;
+    
 }
-
 
 header img{
+ 
+    width: 20vw;
     height: 20vh;
     margin-right: 5%;
-
+    margin-left: 2%;
 }
+
 
 nav{
     display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: space-between;
-}
+    align-items: center;
+    gap: 30%;
+    justify-content: space-around;
+ }
+
 
 ul{
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30%;
+    width: 70vw;
     
 }
 
+li{
+    list-style-type: none;
+    color: black;
+    padding: 2%;
+    border: outset;
+    border-radius: 50%;
+    border-color: #990a1b;
+    background-color: #ffe758;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+ }
 
+.Banner{
+    background-image: url("../img/banner.png");
+    height: 80vh;
+    background-size: contain;
+}
+
+h1 {
+font-size: 3rem;
+margin-top: 25px;
+margin-left: 70px;
+}
+
+.Estrela{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+
+
+p{
+    margin-left: 75px;
+}
+
+.Infos{
+    display: flex;
+    gap: 30px;
+    margin-top: 25px;
+    margin-left: 75px;
+}
+
+.Infos h2 {
+    color: #000000;
+}
+
+.Infos a {
+color: hsl(63, 12%, 35%);
+}
+
+.trailer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.paragrafoVideo p{
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+footer{
+    width: 100vw;
+    background-color: #000000;
+    padding: 2%;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Rodapé{
+display: flex;
+justify-content: center;
+}
+
+.Aluno{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+    color: aliceblue;
+}
+
+.Sites{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: cornsilk
+}
+
+.Aluno h3{
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.Logo{
+    height: 75px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
+}
+
+.Logo:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+/*Moblile lest*/
+
+
+@media (max-width:600px) {
+
+header{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+header img{
+    width: 80vw;
+}
+
+ul{
+    gap: 10%;
+}
+
+li{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Infos{
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+p{
+    margin: 5px;
+}
+
+.midiaquere{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Rodapé{
+    flex-direction: column;
+    align-items: center;
+}
+
+iframe{ 
+    width: 97%;
+}
