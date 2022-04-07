@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
+    
 </head>
 
 <body>
     <header>
-        <div class="MenuPrincipal">
+        
             <img src="./img/One-Piece-Logo.png" alt="">
             <nav>
                 <ul class="Navegador">
@@ -20,26 +21,29 @@
                     <li>Sobre nós</li>
                 </ul>
             </nav>
-        </div>
+        
     </header>
-    <main>
-        <section class="Login">
-            <div>
-                
-                <img src="" alt="">
+    <main class="banner__main">
+        <div class="login__conteiner">
+            <div class="login">
+                <img src="./img/One-Piece-Logo.png" alt="logo one piece" class="logo__login">
+                <h1 class="tittle__login">Login</h1>
+                <div class="email">
 
-                <label for="e-mail"> e-mail</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="informar e-mail" required>
+                    <label for="e-mail"> E-mail</label>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="informar e-mail" required>
+                </div>
+                <div class="senha">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" placeholder="informar senha" required>
+                </div>
 
-                <label for="senha">senha</label>
-                <input type="password" name="senha" id="senha" placeholder="informar senha" required>
-
-                <button class="butão">
+                <button class="botão">
                     <a href="home.html">Enviar</a>
                 </button>
 
             </div>
-        </section>
+        </div>
     </main>
 </body>
 
