@@ -4,76 +4,109 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 
 
-header {
+header{
+    width: 100vw;
+    height: 20vh;
     display: flex;
     background-color: #015974;
-    height: 20vh;
-    width: 100vw;
-    justify-content: space-between;
-
 }
 
-header img {
-
+header img{
+    height: 20vh;
     width: 20vw;
-    height: 20vh;
-    margin-right: 5%;
     margin-left: 2%;
+    margin-right: 5%;
+    }
+
+header img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-
-nav {
+nav{
     display: flex;
-    align-items: center;
-    gap: 30%;
-    justify-content: space-around;
+    flex-direction: row;
+    align-self: center;
 }
 
-
-ul {
+ul{
+    width: 70vw;       
+    gap: 30%;
+    margin-bottom: 2%;
     display: flex;
-    list-style-type: none;
-    gap: 30%;
-    width: 70vw;
-
 }
 
-li {
+li{
     list-style-type: none;
-    color: black;
+    color: black;    
     padding: 2%;
     border: outset;
     border-radius: 50%;
     border-color: #990a1b;
-    background-color: #ffe758;
-    box-shadow: 0px 2px 25px 8px rgba(0, 0, 0, 0.82);
+    background-color: #ffe758;   
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
 }
 
+li:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
 .Banner {
-    background-image: url("../img/banner.png");
+    width: 100vw;
     height: 80vh;
-    background-size: contain;
+    background-image: url("../img/banner.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
 }
 
-h1 {
+main{
+    width: 100vw;
+    background-color: #f6ed9f;
+}
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+.Description h1{
     font-size: 3rem;
-    margin-top: 25px;
-    margin-left: 70px;
 }
 
-.Estrela {
-    margin-left: 75px;
-    margin-top: 25px;
+.Description h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
+.Description p{
+    text-align: center;
+    padding: 2%;
+}
 
-p {
-    margin-left: 75px;
+#Estrela:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
 }
 
 .Infos {
@@ -91,84 +124,91 @@ p {
     color: hsl(63, 12%, 35%);
 }
 
+.Ajustes{
+    text-align: center;
+}
+
 .trailer {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    align-items: center;  
+}
+
+.trailer h1{
+    padding: 2%;
+    font-size: 3rem;
+}
+
+.trailer h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+iframe{
+    border-radius: 15px 15px 15px 15px;
     margin-bottom: 20px;
 }
 
-
-.paragrafoVideo p {
-    font-size: 1.5rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+iframe:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-footer {
+footer{
     width: 100vw;
-    background-color: #000000;
+    background-color: #ffe758;
     padding: 2%;
-    box-shadow: 0px 2px 25px 8px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
 }
 
-.Rodapé {
-    display: flex;
-    justify-content: center;
+.Rodapé{
+display: flex;
+justify-content: center;
 }
 
-.Aluno {
+.Aluno{
     width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding-bottom: 2%;
-    color: aliceblue;
 }
 
-.Sites {
+.Sites{
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    color: aliceblue;
 }
 
-a {
+a{
     text-decoration: none;
-    color: cornsilk
+    color: black; 
 }
 
-.Aluno h3 {
+.Aluno h3{
     text-align: center;
     margin-bottom: 20px;
-    color: aliceblue;
 }
 
-.Logo {
+.Logo{
     height: 75px;
     border-radius: 50%;
     background-color: white;
-    box-shadow: 0px 2px 25px 8px rgba(0, 0, 0, 0.82);
+    box-shadow: 0px 2px 25px 8px rgba(0,0,0,0.82);
 }
 
-.Logo:hover {
+.Logo:hover{
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
 }
 
-h2 {
+h2{
     font-size: 1.5rem;
     text-align: center;
-    color: aliceblue;
 }
-
-
-
-
-
 
 
 /*Moblile lest*/

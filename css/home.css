@@ -291,7 +291,7 @@ h2{
    }
 }
 
-@media (max-width:600px) {
+@media (max-width:550px) {
     
     html{
         scroll-behavior: smooth;
@@ -315,10 +315,11 @@ h2{
     }
     
     li{
-        padding: 5%;
+        padding: 3%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 3%;
     }
 
     .Banner{
@@ -340,7 +341,7 @@ h2{
 
     .Card{
         width: 85%;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
     }
 
     .Profile img{
@@ -364,7 +365,7 @@ h2{
     }
 }
 
-@media (min-width: 610px) and (max-width: 1250px) {
+@media (min-width: 551px) and (max-width: 925px) {
 
     html{
         scroll-behavior: smooth;
@@ -372,7 +373,7 @@ h2{
     }
 
     header{
-        height: 25vh;
+        height: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -392,7 +393,7 @@ h2{
     }
 
     .Banner{
-        height: 75vh;
+        height: 70vh;
         background-size: contain;
         background-repeat: repeat;
     }
