@@ -195,7 +195,7 @@ li:hover{
         transition: 0.5s;
     }
  }
- @media (max-width:500px) {
+@media (max-width:500px) {
     
     html{
         scroll-behavior: smooth;
@@ -230,6 +230,7 @@ li:hover{
         background-repeat: repeat;
     
     }
+}
   
     
     @media (min-width: 510px) and (max-width: 1250px) {
@@ -264,4 +265,4 @@ li:hover{
         background-repeat: repeat;
     }
 
-    }
+}
